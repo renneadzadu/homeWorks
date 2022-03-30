@@ -9,12 +9,15 @@ public class ProjectBob {
         System.out.println("whats your name?");
         String answer = in.nextLine();
 
-        if(answer.equalsIgnoreCase("Bob")|| answer.equalsIgnoreCase("Alice")){
-            System.out.println("Hello" + " " + answer + " " + "Welcome");
-        } else {
-            System.out.println("whats your name?");
+        while (true) {
+            if (answer.equalsIgnoreCase("Bob") || answer.equalsIgnoreCase("Alice")) {
+                System.out.println("Hello" + " " + answer + " " + "Welcome");
+                break;
 
+            } else {
+                System.out.println("whats your name?");
+                answer = in.nextLine();
+            }
         }
-
     }
 }
