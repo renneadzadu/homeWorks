@@ -1,25 +1,15 @@
 package shapes;
+    /*
+    I need the following:
+A  Shape
+A 2DShapes Class
+ - create a square
+A 3DShapes class
+- create a cube
+Map the relationships ..use the extends keyword, the abstract keywords where necessary
+     */
 
-public class Shape {
-    private double length;
-    private double height;
+public abstract class Shape {
 
 
-    public void calculateArea(){
-        System.out.println("i do k");
-    }
-
-    public double getLength() {
-        return this.length;
-    }
-    public void setLength(double length){
-        this.length = length;
-    }
-    public double getHeight() {
-        return this.height;
-    }
-
-    public void setHeight(double height){
-        this.height = height;
-    }
 }
